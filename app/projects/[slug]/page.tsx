@@ -12,6 +12,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+import { ImageModal } from "@/components/ui/image-modal";
 import { projects } from "@/lib/projects-data";
 
 interface ProjectPageProps {
@@ -91,7 +92,11 @@ export default function ProjectPage({ params }: ProjectPageProps) {
               </div>
             </div>
             <div className="relative">
-              <div className="w-full h-96 rounded-lg overflow-hidden bg-muted">
+              <ImageModal
+                src={project.image || "/placeholder.svg"}
+                alt={project.title}
+                className="w-full h-96 rounded-lg overflow-hidden bg-muted"
+              >
                 <Image
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
@@ -100,7 +105,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                   className="w-full h-full object-cover"
                   priority
                 />
-              </div>
+              </ImageModal>
             </div>
           </div>
         </div>
@@ -213,7 +218,11 @@ export default function ProjectPage({ params }: ProjectPageProps) {
             <div className="grid md:grid-cols-2 gap-8">
               {project.gallery.map((image, index) => (
                 <div key={index} className="space-y-2">
-                  <div className="aspect-video rounded-lg overflow-hidden bg-muted">
+                  <ImageModal
+                    src={image.url || "/placeholder.svg"}
+                    alt={image.caption}
+                    className="aspect-video rounded-lg overflow-hidden bg-muted"
+                  >
                     <Image
                       src={image.url || "/placeholder.svg"}
                       alt={image.caption}
@@ -221,7 +230,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                       height={400}
                       className="w-full h-full object-cover"
                     />
-                  </div>
+                  </ImageModal>
                   {image.caption && (
                     <p className="text-sm text-muted-foreground text-center">
                       {image.caption}

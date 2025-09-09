@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 import Link from "next/link";
+import { ImageModal } from "@/components/ui/image-modal";
 
 export function Hero() {
   return (
@@ -15,13 +16,17 @@ export function Hero() {
         <div className="flex flex-col lg:flex-row-reverse items-center justify-center gap-6 lg:gap-8 max-w-6xl mx-auto">
           {/* Profile image */}
           <div className="flex-shrink-0">
-            <div className="w-32 h-32 lg:w-40 lg:h-40 rounded-full bg-gradient-to-br from-accent/20 to-accent/40 flex items-center justify-center">
+            <ImageModal
+              src="/professional-headshot.jpg"
+              alt="Professional headshot"
+              className="w-32 h-32 lg:w-40 lg:h-40 rounded-full bg-gradient-to-br from-accent/20 to-accent/40 flex items-center justify-center"
+            >
               <img
                 src="/professional-headshot.jpg"
                 alt="Professional headshot"
                 className="w-28 h-28 lg:w-36 lg:h-36 rounded-full object-cover"
               />
-            </div>
+            </ImageModal>
           </div>
 
           {/* Content */}
