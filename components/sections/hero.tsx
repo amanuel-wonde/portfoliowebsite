@@ -30,7 +30,7 @@ export function Hero() {
               {/* Main heading */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
                 <span className="text-balance">
-                  Hi, I'm <span className="text-accent">Your Name</span>
+                  Hi, I'm <span className="text-accent">Amanuel Wonde</span>
                 </span>
                 <br />
                 <span className="text-muted-foreground text-3xl sm:text-4xl lg:text-5xl">
