@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -47,15 +48,16 @@ export function Hero() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-              <Button size="lg" className="text-lg px-8 py-3">
-                View My Work
+              <Button size="lg" className="text-lg px-8 py-3" asChild>
+                <Link href="#projects">View My Work</Link>
               </Button>
               <Button
                 variant="outline"
                 size="lg"
                 className="text-lg px-8 py-3 bg-transparent"
+                asChild
               >
-                Get In Touch
+                <Link href="#contact">Get In Touch</Link>
               </Button>
             </div>
           </div>
