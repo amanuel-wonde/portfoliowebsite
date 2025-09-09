@@ -13,7 +13,7 @@ const experiences = [
     role: "Senior Full-Stack Developer",
     period: "2025 - Present",
     description:
-      "Lead development of scalable web applications serving 100k+ users.",
+      "Lead development of scalable web applications serving 100k+ users, overseeing technical architecture and mentoring development teams.",
     achievements: [
       "Reduced application load time by 40% through optimization",
       "Mentored 3 junior developers and established coding standards",
@@ -25,7 +25,7 @@ const experiences = [
     role: "Full-Stack Developer and Project Manager",
     period: "2023 - 2025",
     description:
-      "Developed and maintained multiple client projects using modern web technologies.",
+      "Developed and maintained multiple client projects using modern web technologies while managing project timelines, resources, and client communications.",
     achievements: [
       "Built 15+ responsive web applications from concept to deployment",
       "Implemented automated testing reducing bugs by 60%",
@@ -36,7 +36,8 @@ const experiences = [
     company: "Micro Sun And Solutions PLC",
     role: "Full-Stack Developer and Intern Supervisor",
     period: "2022 - 2023",
-    description: "Created user interfaces for a fast-growing fintech startup.",
+    description:
+      "Created user interfaces for a fast-growing fintech startup while supervising and mentoring intern developers.",
     achievements: [
       "Designed and implemented the company's design system",
       "Improved user engagement by 35% through UX improvements",
